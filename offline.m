@@ -1,4 +1,4 @@
-function [time,quality] = tensor_update()
+function [time,quality] = offline()
 
 %clear all
 %close all
@@ -95,7 +95,7 @@ t1 = clock;
 % while(s!=p)
 c = 0;
 s_c = 0;
-while(~(px==sx && py==sy && pz==sz))
+%while(~(px==sx && py==sy && pz==sz))
 % update Q_sample
     c = c+1;
     %fprintf('start point:%d %d %d\n',sx,sy,sz);
@@ -155,14 +155,11 @@ while(~(px==sx && py==sy && pz==sz))
         end
     end
     fprintf('flying process %d done\n',c);
-    if(c==5)
-        break;
-    end
-end
+%end
 t2 = clock;
 time = etime(t2,t1)+s_c;
 %fprintf('%f\n', time);
 quality = Xn(px,py,pz);
 %% result
 % output p
-fprintf('update:%d %d %d value:%f\n',px,py,pz,Xn(px,py,pz));
+fprintf('offline:%d %d %d value:%f\n',px,py,pz,Xn(px,py,pz));

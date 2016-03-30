@@ -117,12 +117,12 @@ while(~(px==sx && py==sy && pz==sz))
             end
         end
     end
-    fprintf('current:%d %d %d\nanother p:%d %d %d\n',sx,sy,sz,px,py,pz);
+    %fprintf('current:%d %d %d\nanother p:%d %d %d\n',sx,sy,sz,px,py,pz);
 end
 t2 = clock;
 time = etime(t2,t1)+s_c;
-fprintf('%f\n', etime(t2,t1)+s_c);
+%fprintf('%f\n', etime(t2,t1)+s_c);
 quality = Xn(px,py,pz);
 %% result
 % output p
-fprintf('predict position:%d %d %d value:%f\nreal position:%d %d %d real value:%f\n',px,py,pz,Xn(px,py,pz),rx,ry,rz,real_max);;
+fprintf('local:%d %d %d value:%f\n',px,py,pz,Xn(px,py,pz));

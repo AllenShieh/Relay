@@ -154,7 +154,7 @@ s_c = 0;
             end
         end
     end
-    fprintf('flying process %d done\n',c);
+    %fprintf('flying process %d done\n',c);
 %end
 t2 = clock;
 time = etime(t2,t1)+s_c;
@@ -162,4 +162,4 @@ time = etime(t2,t1)+s_c;
 quality = Xn(px,py,pz);
 %% result
 % output p
-fprintf('offline:%d %d %d value:%f\n',px,py,pz,Xn(px,py,pz));
+%fprintf('offline:%d %d %d value:%f\n',px,py,pz,Xn(px,py,pz));

@@ -154,7 +154,7 @@ while(~(px==sx && py==sy && pz==sz))
             end
         end
     end
-    fprintf('flying process %d done\n',c);
+    %fprintf('flying process %d done\n',c);
     if(c==5)
         break;
     end
@@ -165,4 +165,4 @@ time = etime(t2,t1)+s_c;
 quality = Xn(px,py,pz);
 %% result
 % output p
-fprintf('update:%d %d %d value:%f\n',px,py,pz,Xn(px,py,pz));
+%fprintf('update:%d %d %d value:%f\n',px,py,pz,Xn(px,py,pz));

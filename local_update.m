@@ -125,4 +125,4 @@ time = etime(t2,t1)+s_c;
 quality = Xn(px,py,pz);
 %% result
 % output p
-fprintf('local:%d %d %d value:%f\n',px,py,pz,Xn(px,py,pz));
+%fprintf('local:%d %d %d value:%f\n',px,py,pz,Xn(px,py,pz));
